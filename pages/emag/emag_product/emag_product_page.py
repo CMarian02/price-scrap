@@ -1,6 +1,6 @@
 from playwright.sync_api import Page, expect
 from shared.base_page import BasePage
-from shared.get_products import get_products_from_excel, add_product_data
+from shared.product_handling import get_products_from_excel, add_product_data
 
 from pages.emag.emag_product.emag_product_page_locators import EmagProductPageLocators
 
