@@ -1,5 +1,6 @@
 import pytest
 from playwright.sync_api import Page
+from playwright_stealth import stealth_sync
 
 from pages.emag.emag_product.emag_product_page import EmagProductPage
 
@@ -17,4 +18,5 @@ def browser_context_args(browser_context_args):
 
 @pytest.fixture()
 def emag_product_page(page: Page):
+    stealth_sync(page)
     return EmagProductPage(page)
