@@ -12,5 +12,4 @@ def test_emag_product_page(emag_product_page: EmagProductPage):
 
 #TODO - BUG
 #TODO: Fix the human verification. NOTE: Probably fixed with confitest update, but need more test runs for a solid check. 
-#TODO: Fix when stock for a product is < 3, and price label is different.
 #TODO: Fix write bug, if you delete lines in 'price_logs' and script write in file, this is start from last text line, before deletion.
