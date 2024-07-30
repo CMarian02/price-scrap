@@ -24,5 +24,5 @@ class EmagProductPage(BasePage):
     def get_product_price(self) -> str:
         return self.emag_product_price.text_content()
     
-    def add_product_in_db(self, product_name: str, product_price: str):
+    def add_product_data_in_db(self, product_name: str, product_price: str):
         add_product_data('assets/prices_log.xlsx', product_name, product_price, datetime.now())
